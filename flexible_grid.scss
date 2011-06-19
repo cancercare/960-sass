@@ -1,0 +1,38 @@
+body{ text-align:center; }
+
+@mixin container_12{
+  text-align:left;
+  width: 92%;
+  max-width:1080px; /* Change per project */
+  min-width:320px;
+  margin: 0 auto;
+}
+
+@mixin alpha{ margin-left:0; }
+@mixin omega{ margin-right:0; }
+
+@mixin grid($columns){
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: $columns*6.333333333% + ($columns - 1)*2%;
+}
+
+@mixin prefix($columns){ padding-left: $columns*8.333333333%; }
+@mixin suffix($columns){ padding-right: $columns*8.333333333%; }
+
+@mixin push($columns){ left: $columns*8.333333333%; }
+@mixin pull($columns){ left: $columns*(-8.333333333%); }
+
+@mixin clearfix{
+  &:before{
+    content:"";display:table;
+  }
+  &:after{
+    content:"";display:table;
+    clear:both;
+  }
+  zoom:1;
+}
