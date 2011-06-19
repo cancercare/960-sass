@@ -56,3 +56,7 @@ You can see it in action in [the stylesheet source of tjschuck.com](https://gith
 T.J. Schuck   
 [http://tjschuck.com](http://tjschuck.com)   
 [@tjschuck](http://twitter.com/tjschuck)   
+
+## License
+Copyright &copy; 2011 T.J. Schuck  
+Released under the [MIT license](http://www.opensource.org/licenses/MIT).
